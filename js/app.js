@@ -5298,6 +5298,31 @@ class WanBridgeApp {
   /**
    * グッズストア商品の取得とレンダリング
    */
+  
+  getAffiliateSearchQuery(prod) {
+    if (prod.affiliate_search) return prod.affiliate_search;
+    const name = prod.name || "";
+    if (name.includes("ダンボール迷路")) return "犬 ダンボール 迷路";
+    if (name.includes("ダンボールベッド")) return "犬 段ボール ベッド";
+    if (name.includes("スマート首輪")) return "犬 GPS 首輪";
+    if (name.includes("見守りカメラ") || name.includes("Tapo")) return "TP-Link Tapo 見守りカメラ ペット";
+    if (name.includes("温湿度計")) return "Tapo 温湿度計 ペット";
+    if (name.includes("計量ボウル")) return "ペット フードボウル スケール";
+    if (name.includes("LED") || name.includes("ハーネス")) return "光る ハーネス 犬 夜間 LED";
+    if (name.includes("パピードール") || name.includes("鼓動")) return "犬 おもちゃ 心拍 ぬいぐるみ パピー";
+    if (name.includes("うんちBOX") || name.includes("消臭")) return "犬 うんちBOX 防臭 密閉";
+    if (name.includes("歯ブラシ")) return "犬 音波振動 歯ブラシ";
+    if (name.includes("エゾ鹿")) return "犬 無添加 エゾ鹿肉 ジャーキー";
+    if (name.includes("脱感作")) return "犬 ブラシ スリッカー コーム セット";
+    if (name.includes("チキンフレーク")) return "犬 無添加 チキン トッピング";
+    if (name.includes("スターターフルセット") || name.includes("スターター5点")) return "犬 ケージ サークル トイレ 給水器 セット";
+    if (name.includes("ささみジャーキー")) return "犬 ささみ ジャーキー 無添加 国産";
+    if (name.includes("バースデーケーキ")) return "犬用 バースデーケーキ 無添加";
+    if (name.includes("セルフウォッシュ")) return "犬 シャンプー 炭酸泉 オーガニック";
+    if (name.includes("保険")) return "ペット保険 犬";
+    return name.replace(/【.*?】/g, "").replace(/（.*?）/g, "").trim();
+  }
+
   async loadGoodsShop(category = 'all', search = '') {
     const grid = document.getElementById('shop-products-grid');
     if (!grid) return;
@@ -5340,6 +5365,10 @@ class WanBridgeApp {
 
       // 商品カード生成
       grid.innerHTML = products.map(p => {
+        const affQuery = this.getAffiliateSearchQuery(p);
+        const encodedAffQuery = encodeURIComponent(affQuery);
+        const rakutenUrl = `https://search.rakuten.co.jp/search/mall/${encodedAffQuery}/`;
+        const amazonUrl = `https://www.amazon.co.jp/s?k=${encodedAffQuery}`;
         const isFeatured = p.is_featured;
         const features = Array.isArray(p.features) ? p.features : [];
         const costPrice = p.cost_price || Math.round(p.price * 0.7);
@@ -5365,9 +5394,11 @@ class WanBridgeApp {
               <!-- コンテンツ -->
               <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
                 <div class="space-y-2">
-                  <h3 class="font-black text-stone-900 text-sm md:text-base leading-snug group-hover:text-amber-700 transition">
-                    ${p.name}
-                  </h3>
+                  <a href="${rakutenUrl}" target="_blank" rel="noopener noreferrer" class="block group/link" title="楽天市場で見る">
+                    <h3 class="font-black text-stone-900 text-sm md:text-base leading-snug group-hover/link:text-red-600 transition">
+                      ${p.name}
+                    </h3>
+                  </a>
                   <p class="text-xs text-stone-600 font-medium leading-relaxed line-clamp-2">
                     ${p.tagline}
                   </p>
@@ -5407,25 +5438,29 @@ class WanBridgeApp {
                     </div>
                   </div>
 
-                  <!-- 購入・アフィリエイトボタン（楽天＆Amazon対応） -->
-                  <div class="space-y-2">
-                    <button type="button" class="btn-buy-product w-full bg-stone-900 hover:bg-stone-800 text-amber-400 font-black text-xs py-2.5 rounded-2xl shadow-sm transition active:scale-98 flex items-center justify-center gap-2 border border-amber-400/30"
-                      data-product-id="${p.id}">
-                      <span>🛒</span>
-                      <span>直営・提携カフェ還元で購入手続き</span>
-                    </button>
-                    <div class="grid grid-cols-2 gap-2 text-[11px] font-bold">
-                      <a href="https://search.rakuten.co.jp/search/mall/${encodeURIComponent(p.name)}/" target="_blank" rel="noopener noreferrer"
-                        class="bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 py-1.5 px-2 rounded-xl text-center flex items-center justify-center gap-1 transition">
-                        <span>🔴</span>
+                  <!-- 🔴 楽天市場で探す ＆ 📦 Amazonで探す ダイレクト送客ボタン -->
+                  <div class="space-y-2 pt-1">
+                    <div class="grid grid-cols-2 gap-2">
+                      <a href="${rakutenUrl}" target="_blank" rel="noopener noreferrer"
+                        class="bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-700 hover:to-rose-700 text-white font-black text-xs py-2.5 px-3 rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center justify-center gap-1.5 text-center border border-red-500/30 group/rakuten">
+                        <span class="text-sm">🔴</span>
                         <span>楽天市場で探す</span>
+                        <span class="text-[10px] opacity-80 group-hover/rakuten:translate-x-0.5 transition-transform">➔</span>
                       </a>
-                      <a href="https://www.amazon.co.jp/s?k=${encodeURIComponent(p.name)}" target="_blank" rel="noopener noreferrer"
-                        class="bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 py-1.5 px-2 rounded-xl text-center flex items-center justify-center gap-1 transition">
-                        <span>📦</span>
+                      <a href="${amazonUrl}" target="_blank" rel="noopener noreferrer"
+                        class="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-stone-950 font-black text-xs py-2.5 px-3 rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center justify-center gap-1.5 text-center border border-amber-400/50 group/amazon">
+                        <span class="text-sm">📦</span>
                         <span>Amazonで探す</span>
+                        <span class="text-[10px] opacity-80 group-hover/amazon:translate-x-0.5 transition-transform">➔</span>
                       </a>
                     </div>
+
+                    <!-- 直営・提携カフェ還元での注文ボタン（折りたたみ・選択肢） -->
+                    <button type="button" class="btn-buy-product w-full bg-stone-100 hover:bg-stone-200 text-stone-700 hover:text-stone-900 font-bold text-[11px] py-2 rounded-xl transition active:scale-98 flex items-center justify-center gap-1.5 border border-stone-200"
+                      data-product-id="${p.id}">
+                      <span>☕</span>
+                      <span>千住古民家カフェ・直営サポート窓口で注文</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -5499,6 +5534,14 @@ class WanBridgeApp {
       const globalCafeCode = document.getElementById('shop-global-cafe-code')?.value || 'SENJU-CAFE';
       const cafeInput = document.getElementById('order-cafe-code');
       if (cafeInput) cafeInput.value = globalCafeCode;
+
+      // モーダル内の楽天・Amazonダイレクトリンクも設定
+      const affQuery = this.getAffiliateSearchQuery(prod);
+      const encodedQ = encodeURIComponent(affQuery);
+      const modalRakuten = document.getElementById('modal-btn-rakuten');
+      const modalAmazon = document.getElementById('modal-btn-amazon');
+      if (modalRakuten) modalRakuten.href = `https://search.rakuten.co.jp/search/mall/${encodedQ}/`;
+      if (modalAmazon) modalAmazon.href = `https://www.amazon.co.jp/s?k=${encodedQ}`;
 
       this.updateOrderModalAmounts();
 
