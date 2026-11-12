@@ -1,0 +1,163 @@
+/* WanBridge - カスタムスタイルシート */
+
+@layer utilities {
+
+  /* スマホセーフエリア対応 (iPhone下部バー等) */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 1rem);
+  }
+
+  .mb-safe {
+    margin-bottom: env(safe-area-inset-bottom, 1rem);
+  }
+}
+
+/* スクロールバー非表示・細線化 */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 9999px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 9999px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+/* イエローマークの警戒パルス効果 */
+@keyframes yellowPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.6);
+  }
+
+  50% {
+    box-shadow: 0 0 0 8px rgba(245, 158, 11, 0);
+  }
+}
+
+.yellow-alert-pulse {
+  animation: yellowPulse 2s infinite;
+}
+
+/* PC大画面スライダーのスムーズトランジション */
+.slider-track {
+  will-change: transform;
+}
+
+/* スマホ用タップハイライト制御 */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ====================================================
+   🖨️ パピー社会化卒業認定証 (Diploma) A4印刷・PDF出力スタイル
+   ==================================================== */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #diploma-modal,
+  #diploma-modal * {
+    visibility: visible;
+  }
+
+  #diploma-modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ffffff !important;
+    display: block !important;
+  }
+
+  #diploma-modal>div {
+    max-width: 100% !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* 操作バー・ボタン類は印刷から除外 */
+  #diploma-modal>div>div.bg-stone-900 {
+    display: none !important;
+  }
+
+  #diploma-printable-area {
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+
+  .diploma-page-break {
+    page-break-before: always;
+    break-before: page;
+  }
+}
+
+/* ====================================================
+   👴 シニア向け特大文字モード (Accessibility)
+   ==================================================== */
+body.senior-large-text {
+  font-size: 17px !important;
+  line-height: 1.75 !important;
+}
+
+body.senior-large-text p,
+body.senior-large-text .text-xs,
+body.senior-large-text .text-\[11px\],
+body.senior-large-text .text-\[10px\] {
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+
+body.senior-large-text .text-sm {
+  font-size: 16px !important;
+}
+
+body.senior-large-text .text-base {
+  font-size: 18px !important;
+}
+
+body.senior-large-text button,
+body.senior-large-text a {
+  letter-spacing: 0.02em !important;
+}
