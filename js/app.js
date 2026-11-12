@@ -5438,29 +5438,58 @@ class WanBridgeApp {
                     </div>
                   </div>
 
+                  <!-- 販路区分バッジ（AliEx無在庫直送 vs 国内アフィリエイト限定） -->
+                  <div class="pt-1">
+                    ${p.channel_type === domestic_affiliate_only ? `
+                      <span class="text-[10px] bg-blue-50 text-blue-800 font-bold px-2 py-0.5 rounded-md border border-blue-200 flex items-center gap-1">
+                        <span>🛡️</span>
+                        <span>国内法令完全クリア（検疫・ペットフード安全法・技適済）</span>
+                      </span>
+                    ` : `
+                      <span class="text-[10px] bg-amber-50 text-amber-900 font-bold px-2 py-0.5 rounded-md border border-amber-200 flex items-center justify-between">
+                        <span class="flex items-center gap-1"><span>⚡</span><span>AliExpress無在庫直送＋国内EC併売</span></span>
+                        <span class="text-emerald-700 font-black">${p.margin_note || 粗利70%超}</span>
+                      </span>
+                    `}
+                  </div>
+
                   <!-- 🔴 楽天市場で探す ＆ 📦 Amazonで探す ダイレクト送客ボタン -->
                   <div class="space-y-2 pt-1">
                     <div class="grid grid-cols-2 gap-2">
                       <a href="${rakutenUrl}" target="_blank" rel="noopener noreferrer"
-                        class="bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-700 hover:to-rose-700 text-white font-black text-xs py-2.5 px-3 rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center justify-center gap-1.5 text-center border border-red-500/30 group/rakuten">
+                        class="bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-700 hover:to-rose-700 text-white font-black text-xs py-2.5 px-2 rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center justify-center gap-1 text-center border border-red-500/30 group/rakuten">
                         <span class="text-sm">🔴</span>
                         <span>楽天市場で探す</span>
                         <span class="text-[10px] opacity-80 group-hover/rakuten:translate-x-0.5 transition-transform">➔</span>
                       </a>
                       <a href="${amazonUrl}" target="_blank" rel="noopener noreferrer"
-                        class="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-stone-950 font-black text-xs py-2.5 px-3 rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center justify-center gap-1.5 text-center border border-amber-400/50 group/amazon">
+                        class="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-stone-950 font-black text-xs py-2.5 px-2 rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center justify-center gap-1 text-center border border-amber-400/50 group/amazon">
                         <span class="text-sm">📦</span>
                         <span>Amazonで探す</span>
                         <span class="text-[10px] opacity-80 group-hover/amazon:translate-x-0.5 transition-transform">➔</span>
                       </a>
                     </div>
 
-                    <!-- 直営・提携カフェ還元での注文ボタン（折りたたみ・選択肢） -->
-                    <button type="button" class="btn-buy-product w-full bg-stone-100 hover:bg-stone-200 text-stone-700 hover:text-stone-900 font-bold text-[11px] py-2 rounded-xl transition active:scale-98 flex items-center justify-center gap-1.5 border border-stone-200"
-                      data-product-id="${p.id}">
-                      <span>☕</span>
-                      <span>千住古民家カフェ・直営サポート窓口で注文</span>
-                    </button>
+                    ${p.aliexpress_url ? `
+                      <div class="grid grid-cols-2 gap-2">
+                        <a href="${p.aliexpress_url}" target="_blank" rel="noopener noreferrer"
+                          class="bg-orange-50 hover:bg-orange-100 text-orange-950 border border-orange-200 font-bold text-[11px] py-1.5 px-2 rounded-xl text-center flex items-center justify-center gap-1 transition active:scale-98">
+                          <span>🌐</span>
+                          <span>AliExpress直送仕入</span>
+                        </a>
+                        <button type="button" class="btn-buy-product bg-stone-100 hover:bg-stone-200 text-stone-700 hover:text-stone-900 font-bold text-[11px] py-1.5 px-2 rounded-xl transition active:scale-98 flex items-center justify-center gap-1 border border-stone-200"
+                          data-product-id="${p.id}">
+                          <span>☕</span>
+                          <span>直営窓口で注文</span>
+                        </button>
+                      </div>
+                    ` : `
+                      <button type="button" class="btn-buy-product w-full bg-stone-100 hover:bg-stone-200 text-stone-700 hover:text-stone-900 font-bold text-[11px] py-2 rounded-xl transition active:scale-98 flex items-center justify-center gap-1.5 border border-stone-200"
+                        data-product-id="${p.id}">
+                        <span>☕</span>
+                        <span>千住古民家直営サポート窓口で注文</span>
+                      </button>
+                    `}
                   </div>
                 </div>
               </div>

@@ -610,6 +610,192 @@
               rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+段ボール+ベッド/"
             }
           },
+
+          // --- 1. ダンボール遊具・家具シリーズ（可愛い愛犬の絵柄入り・舐めても安全な大豆油インキ） ---
+          {
+            id: "ec-prod-28", product_code: "PROD-CARDBOARD-MAZE-AGILITY", name: "知育ダンボール迷路＆トンネル (可愛いコーギー・柴犬絵柄入り)",
+            category: "starter_goods", category_label: "📦 ダンボール遊具・迷路", price: 3980, cost_price: 980, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.150, partner_commission: 600, margin_note: "粗利3,000円 (粗利75.3%＋Ali9%)", is_featured: 1,
+            image_url: "/home/antigravity/.gemini/jetski/brain/v1/default/jetski_remote_agents_3p/b4c57c7b-202a-4106-b902-46c101f7f65f/cardboard_dog_maze_1794422707665.jpg",
+            tagline: "舐めても安全な大豆油インキ採用！工具不要10分組立。雨の日の運動不足・パピーの好奇心を満たす室内アジリティ",
+            features: ["食品容器用植物インク（大豆油インキ）採用でパピーの甘噛みも安全", "工具・接着剤完全不要！差し込みスロット式で女性一人でも10分簡単組み立て", "のぞき穴・骨型トンネル付きでパピーの探検トレーニングに最適", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "犬 ダンボール 迷路 トンネル",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-dog-cardboard-maze.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+ダンボール+迷路", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+ダンボール+迷路/" }
+          },
+          {
+            id: "ec-prod-29", product_code: "PROD-CARDBOARD-HONEYCOMB-CHAIR", name: "耐荷重60kg！ダンボール椅子＆ドッグステップ (小型犬パテラ脱臼予防兼用)",
+            category: "starter_goods", category_label: "📦 ダンボール家具・椅子", price: 3280, cost_price: 820, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.150, partner_commission: 492, margin_note: "粗利2,460円 (粗利75%＋Ali8%)", is_featured: 1,
+            image_url: "/home/antigravity/.gemini/jetski/brain/v1/default/jetski_remote_agents_3p/b4c57c7b-202a-4106-b902-46c101f7f65f/cardboard_dog_maze_1794422707665.jpg",
+            tagline: "人間も座れる高強度ハニカム構造！可愛いワンちゃん柄。ソファ昇降時の膝関節・パテラ脱臼を予防するステップ兼用",
+            features: ["特殊ハニカム強化ダンボール構造により耐荷重60kgの圧倒的強度", "小型犬・トイプードルのソファ飛び降りによる骨折・パテラ脱臼を防止", "舐めても無害な植物由来インク印刷・可愛い手描き風デザイン", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "犬 ドッグステップ ダンボール 椅子",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-pet-cardboard-chair.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+ドッグステップ+ダンボール", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+ドッグステップ+ダンボール/" }
+          },
+          {
+            id: "ec-prod-30", product_code: "PROD-CARDBOARD-OVAL-BED", name: "すっぽりフィット！ダンボールベッド (リバーシブル起毛ボアマット付き)",
+            category: "starter_goods", category_label: "📦 ダンボールベッド", price: 2800, cost_price: 680, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.151, partner_commission: 424, margin_note: "粗利2,120円 (粗利75.7%＋Ali9%)", is_featured: 1,
+            image_url: "/home/antigravity/.gemini/jetski/brain/v1/default/jetski_remote_agents_3p/b4c57c7b-202a-4106-b902-46c101f7f65f/cardboard_dog_maze_1794422707665.jpg",
+            tagline: "ダンボールの微細空気層で冬の底冷えを完全遮断。アゴ乗せに最適な楕円型ボウル設計",
+            features: ["ダンボール特有の中空空気層が床からの冷気を断熱し保温効果抜群", "ワンちゃんが落ち着くすっぽり包み込まれるオーバル型エルゴデザイン", "取り外して洗濯機で丸洗いできるリバーシブル起毛ボアマット付属", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "犬 段ボール ベッド ボウル",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-pet-cardboard-bed.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+段ボール+ベッド", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+段ボール+ベッド/" }
+          },
+
+          // --- 2. トイBOX・まとめ売り・初心者セット ---
+          {
+            id: "ec-prod-21", product_code: "PROD-PLUSH-ROPE-TOYBOX-16", name: "知育ぬいぐるみ＆天然コットンロープ 16点トイBOX (音鳴り笛8点＋ロープ6点＋知育ボール2点)",
+            category: "starter_goods", category_label: "🧸 トイBOX・まとめ売り", price: 4980, cost_price: 1380, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.145, partner_commission: 720, margin_note: "粗利3,600円 (粗利72.2%＋Ali8%)", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80",
+            tagline: "パピー期の甘噛み・家具破壊対策を総取り！豪華ギフトBOX仕様。歯茎を痛めず遊んで歯石ケア",
+            features: ["音鳴り笛入りぬいぐるみ8点＋無漂白天然コットンロープ6点＋知育トイ2点", "ドギーボックス商標を完全回避した独自開発のまとめ売りパッケージ", "噛むだけで歯垢を物理除去し歯茎をマッサージする高耐久繊維", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "犬 おもちゃ セット ぬいぐるみ ロープ",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-dog-toys-set.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+おもちゃ+セット+ぬいぐるみ", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+おもちゃ+セット+ぬいぐるみ/" }
+          },
+          {
+            id: "ec-prod-22", product_code: "PROD-PUPPY-BEGINNER-PACK-9", name: "犬飼い初心者安心スターター9点セット (抗菌食器・ブラシ・コーム・生分解マナー袋・ブランケット等)",
+            category: "starter_goods", category_label: "🎖️ スターターセット", price: 5980, cost_price: 1680, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.144, partner_commission: 860, margin_note: "粗利4,300円 (粗利71.9%＋Ali8%)", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=800&q=80",
+            tagline: "お迎え初日に必要な飼育小物をワンパッケージ！粗利4,300円の高収益スターターまとめ売り",
+            features: ["抗菌ステンレス食器、ソフトスリッカーブラシ、コーム、爪切りセット", "土に還るコーンスターチ製生分解マナー袋120枚＋専用ディスペンサー", "保温フリースブランケット、噛み癖防止ロープトイ同梱", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "犬 初心者 スターター セット グルーミング",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-dog-puppy-starter-kit.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+初心者+スターターキット", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+初心者+スターターキット/" }
+          },
+          {
+            id: "item-toy-nosework", product_code: "PROD-CARROT-NOSEWORK-MAT", name: "ニンジン畑ノーズワーク知育マット (早食い防止＆嗅覚集中トレーニング)",
+            category: "starter_goods", category_label: "🥕 知育ノーズワーク", price: 2980, cost_price: 850, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.143, partner_commission: 426, margin_note: "粗利2,130円 (粗利71.4%＋Ali9%)", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&w=800&q=80",
+            tagline: "15分のノーズワークで1時間の散歩に匹敵！雨の日の運動不足・ストレスを楽しく解消",
+            features: ["ニンジンを引っこ抜いてポケットにおやつを隠す人気知育パズル", "嗅覚を使うことで早食いを防止し、脳の活性化と知能発達を促進", "底面滑り止めシリコングリップ加工・洗濯機で丸洗い可能", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "犬 ノーズワーク ニンジン 知育マット",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-dog-nosework-carrot.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+ノーズワーク+にんじん", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+ノーズワーク+にんじん/" }
+          },
+
+          // --- 3. 季節イベント・歳時記ハウス・コスプレ ---
+          {
+            id: "ec-prod-23", product_code: "PROD-XMAS-SANTA-3D-COSTUME", name: "クリスマス愛犬サンタ＆トナカイ 3D服 (前足を通すだけ！2足歩行コスプレ)",
+            category: "safety_outdoors", category_label: "🎄 季節イベント・衣装", price: 2480, cost_price: 520, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.158, partner_commission: 392, margin_note: "粗利1,960円 (粗利79%＋Ali9%)", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=800&q=80",
+            tagline: "前から見ると小さなサンタさんがトコトコ歩いてくる爆笑3D立体コスプレ！前足を通すだけ10秒装着",
+            features: ["SNS・TikTok・Instagramで大バズり確定の立体2足歩行デザイン", "面ファスナー（マジックテープ）で首回りと胴回りを簡単サイズ調整", "肌触りの良いベルベット調フリースで着心地抜群", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "犬 クリスマス コスプレ サンタ トナカイ",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-dog-christmas-costume.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+クリスマス+コスチューム", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+クリスマス+コスチューム/" }
+          },
+          {
+            id: "ec-prod-24", product_code: "PROD-SEASONAL-HOUSE-6SET", name: "日本の歳時記 四季の折りたたみハウス6選 (Xmas・ハロウィン・七夕・節句等)",
+            category: "starter_goods", category_label: "🎌 歳時記ハウス", price: 6800, cost_price: 1850, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.146, partner_commission: 990, margin_note: "粗利4,950円 (粗利72.7%＋Ali8%)", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80",
+            tagline: "年間6大行事対応！厚さ5cmに折りたためるドール＆オーナメント付き年中行事ハウス",
+            features: ["クリスマス・ハロウィン・七夕・端午の節句・ひな祭り・バレンタインの年間対応", "使わない時期は厚さ5cmにコンパクト収納可能", "ワンちゃんが安心して籠もれる防音・遮光ドーム構造", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "犬 ペットハウス 折りたたみ 季節",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-pet-foldable-house.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=ペットハウス+折りたたみ", rakuten_url: "https://search.rakuten.co.jp/search/mall/ペットハウス+折りたたみ/" }
+          },
+          {
+            id: "ec-prod-25", product_code: "PROD-HALLOWEEN-PUMPKIN-BED", name: "ハロウィン限定 かぼちゃ型ドームベッド (お化け＆コウモリ音鳴りトイ付)",
+            category: "starter_goods", category_label: "🎃 ハロウィン限定", price: 3800, cost_price: 980, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.148, partner_commission: 564, margin_note: "粗利2,820円 (粗利74.2%＋Ali9%)", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=800&q=80",
+            tagline: "ジャック・オ・ランタンから顔を出す姿が激カワ！秋冬の冷気を遮断する超肉厚保温ボア",
+            features: ["ハロウィン撮影会で大活躍！カボチャ型ドームで秋冬の防寒対策にも抜群", "弾力性に優れた高密度PP綿採用で型崩れしにくい構造", "付属のお化け＆コウモリの笛入りトイで楽しく遊べる", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "犬 かぼちゃ ベッド ハロウィン ドーム",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-pumpkin-dog-bed.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+かぼちゃ+ベッド", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+かぼちゃ+ベッド/" }
+          },
+
+          // --- 4. 犬種別ステッカー（シール） ---
+          {
+            id: "item-sticker-corgi", product_code: "PROD-STICKER-CORGI-CAR", name: "コーギー おしり＆覗き見カーステッカー (防水・UV耐候3年仕様)",
+            category: "safety_outdoors", category_label: "🏷️ 犬種別ステッカー", price: 1280, cost_price: 180, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.172, partner_commission: 220, margin_note: "粗利1,100円 (粗利85.9%＋Ali9%)", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=800&q=80",
+            tagline: "食パンお尻とひょっこり覗き見デザイン！煽り運転防止＆リアガラス装飾に大人気",
+            features: ["雨・紫外線・洗車機にも耐える屋外看板グレードUVラミネートフィルム", "愛車のリアガラスや給油口、スーツケース、パソコンに貼れる", "糊残りしにくく綺麗に剥がせる再剥離仕様シート", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "コーギー ステッカー 車 防水",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-corgi-car-sticker.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=コーギー+車+ステッカー", rakuten_url: "https://search.rakuten.co.jp/search/mall/コーギー+車+ステッカー/" }
+          },
+          {
+            id: "item-sticker-shiba", product_code: "PROD-STICKER-SHIBA-3SET", name: "柴犬 拒否柴＆ちんちんポーズシール3枚組 (スマホ・PC・車載用)",
+            category: "safety_outdoors", category_label: "🏷️ 犬種別ステッカー", price: 980, cost_price: 120, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.176, partner_commission: 172, margin_note: "粗利860円 (粗利87.7%＋Ali9%)", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80",
+            tagline: "散歩を断固拒否するムニッとした柴犬＋おやつおねだりポーズ！高利益・高回転の衝動買いグッズ",
+            features: ["人気イラストレーター描き下ろしのイヤイヤ拒否柴デザイン3種セット", "高精細フルカラー印刷 ＆ 防水防傷マットコーティング", "スマホケースやノートPCにジャストフィットするサイズ感", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "柴犬 拒否柴 ステッカー シール",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-shiba-inu-sticker.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=柴犬+拒否柴+ステッカー", rakuten_url: "https://search.rakuten.co.jp/search/mall/柴犬+拒否柴+ステッカー/" }
+          },
+
+          // --- 5. 衛生・機能性ウェア・お散歩グッズ ---
+          {
+            id: "item-shoes-summer", product_code: "PROD-DOG-SHOES-MESH-3D", name: "愛犬用 3D通気メッシュ保護シューズ (アスファルト60℃熱傷＆冬季融雪剤ガード)",
+            category: "safety_outdoors", category_label: "🦮 肉球ケア・シューズ", price: 2980, cost_price: 720, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.152, partner_commission: 452, margin_note: "粗利2,260円 (粗利75.8%＋Ali9%)", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80",
+            tagline: "真夏の猛暑アスファルト熱傷や冬の融雪剤から肉球を徹底保護！断熱ラバーソール＋蒸れ防止立体メッシュ",
+            features: ["耐熱・耐摩耗断熱ラバーソールで路面熱60℃から肉球を完全保護", "3D立体ハニカムメッシュで真夏でも靴内の蒸れ・熱気を即座に放出", "ダブルマジックテープ脱落防止ベルトで激しいダッシュでも脱げない", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "犬 靴 夏 アスファルト メッシュ",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-dog-summer-shoes.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+靴+夏+メッシュ", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+靴+夏+メッシュ/" }
+          },
+          {
+            id: "item-apparel-boa-dress", product_code: "PROD-BOA-DRESS-LIGHTGREY", name: "犬用 もこもこボアワンピース (ライトグレーホワイト・防寒静電気防止)",
+            category: "safety_outdoors", category_label: "👗 機能性アパレル", price: 2480, cost_price: 580, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.153, partner_commission: 380, margin_note: "粗利1,900円 (粗利76.6%＋Ali9%)", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=800&q=80",
+            tagline: "冬の寒がり小型犬（プードル・チワワ）向け極暖ウェア！お散歩時の静電気・被毛汚れをガード",
+            features: ["軽くて暖かい極細マイクロフリースボア素材採用", "お腹側ゴムギャザー仕様でオシッコがかかりにくい親切裁断", "伸縮性に優れ、手足を通しやすく愛犬の動きを妨げない", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "犬 服 ワンピース ボア 冬",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-dog-winter-dress.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+服+ボア+ワンピース", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+服+ボア+ワンピース/" }
+          },
+          {
+            id: "ec-prod-19-carbed", product_code: "PROD-CAR-DRIVE-BED-360", name: "360°雲型ふかふかドライブベッド (急ブレーキ転落防止・カフェマット兼用)",
+            category: "safety_outdoors", category_label: "🚗 ドライブベッド", price: 6480, cost_price: 1850, supplier_name: "AliExpress Choice直送 / 国内問屋提携",
+            partner_margin_rate: 0.143, partner_commission: 926, margin_note: "粗利4,630円 (粗利71.5%＋Ali9%)", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80",
+            tagline: "急ブレーキ時の転落・車酔いを防ぐ厚型PP綿クッション！ファスナー全開でドッグカフェ寛ぎマット兼用",
+            features: ["シートベルト固定ベルト＆飛び出し防止リードフック2本標準装備", "四方を囲むボリュームクッションで車揺れや急カーブ時の衝撃を吸収", "底面防水滑り止め加工・外カバーを取り外して洗濯機で丸洗い可能", "AliExpress無在庫直送 ＋ 楽天市場・Amazon即日配送に対応"],
+            channel_type: "hybrid_aliexpress", affiliate_search: "犬 ドライブベッド 車載 ドライブシート",
+            aliexpress_url: "https://ja.aliexpress.com/w/wholesale-dog-car-seat-bed.html",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+ドライブベッド", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+ドライブベッド/" }
+          },
+
+          // --- 6. 【国内アフィリエイト限定】生物・食品・おやつ・電波機器（法令完全クリア） ---
+          {
+            id: "ec-prod-26", product_code: "PROD-PREMIUM-GLOBAL-TREATS", name: "欧米プレミアム厳選おやつBOX (NZ産フリーズドライ・ヒマラヤヤクチーズ等)",
+            category: "food_treats", category_label: "🍖 国内検疫適合おやつ", price: 4500, cost_price: 3600, supplier_name: "農水省検疫クリア国内正規輸入元",
+            partner_margin_rate: 0.050, partner_commission: 225, margin_note: "楽天/Amazonアフィリ(2〜8%)", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?auto=format&fit=crop&w=800&q=80",
+            tagline: "【動植物検疫完全クリア】農水省適合の国内正規輸入品のみを厳選！肉類没収リスクゼロの安全BOX",
+            features: ["ペットフード安全法・家畜伝染病予防法に完全準拠した国内正規代理店流通品", "ニュージーランド産グラスフェッドビーフのフリーズドライ＆ヒマラヤ産無添加ヤクチーズ", "人工保存料・合成着色料・香料一切不使用", "国内発送（楽天市場・Amazon公式）で最短翌日お届け"],
+            channel_type: "domestic_affiliate_only", affiliate_search: "犬 フリーズドライ おやつ プレミアム ヤクチーズ",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+フリーズドライ+おやつ+プレミアム", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+フリーズドライ+おやつ+プレミアム/" }
+          },
+          {
+            id: "ec-prod-27", product_code: "PROD-SENJU-JERKY-4BOX", name: "千住直製 国産無添加ジャーキー4種BOX (エゾ鹿・ささみ・天然鮭・米粉クッキー)",
+            category: "food_treats", category_label: "🥉 千住厨房直製ジャーキー", price: 3480, cost_price: 520, supplier_name: "千住古民家WanTea厨房（飼料製造届出済）",
+            partner_margin_rate: 0.170, partner_commission: 592, margin_note: "自社直販粗利85% / 楽天Amazon併売", is_featured: 1,
+            image_url: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?auto=format&fit=crop&w=800&q=80",
+            tagline: "【愛がん動物用飼料製造届済】千住古民家厨房で低温熟成乾燥！高タンパク・低アレルゲンの極上おやつ",
+            features: ["北海道産エゾ鹿肉・宮崎県産ささみ・北海道産秋鮭・自家製米粉クッキー", "食品乾燥機で70℃・12時間低温乾燥。保存料・食塩・小麦粉完全ゼロ", "パピーの知育トレーニングやお迎え記念ギフトに最適", "千住古民家直営店頭受取・自社配送 ＆ 楽天/Amazon併売"],
+            channel_type: "domestic_direct_and_affiliate", affiliate_search: "犬 無添加 ジャーキー 鹿肉 ささみ 国産",
+            affiliate: { amazon_url: "https://www.amazon.co.jp/s?k=犬+無添加+ジャーキー+国産", rakuten_url: "https://search.rakuten.co.jp/search/mall/犬+無添加+ジャーキー+国産/" }
+          },
           {
             id: "ec-prod-17", product_code: "PROD-PET-INSURANCE", name: "アニコム・アイペット正規取次 ペット保険 店頭相談・申込サポート窓口",
             category: "insurance", category_label: "🥇 ペット保険代理店", price: 0, cost_price: 0, supplier_name: "正規代理店受託（手数料直振込）",
